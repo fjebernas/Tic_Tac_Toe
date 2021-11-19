@@ -1,0 +1,10 @@
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\bin\Debug\TicTacToeProgram.exe.config
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\bin\Debug\TicTacToeProgram.exe
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\bin\Debug\TicTacToeProgram.pdb
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\obj\Debug\TicTacToeProgram.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\obj\Debug\TicTacToeProgram.Form1.resources
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\obj\Debug\TicTacToeProgram.Properties.Resources.resources
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\obj\Debug\TicTacToeProgram.csproj.GenerateResource.cache
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\obj\Debug\TicTacToeProgram.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\obj\Debug\TicTacToeProgram.exe
+C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\obj\Debug\TicTacToeProgram.pdb
