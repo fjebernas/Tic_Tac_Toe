@@ -21,5 +21,15 @@ namespace TicTacToeProgram
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRow1Col1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
