@@ -38,6 +38,8 @@ namespace TicTacToeProgram
                 btnRow1Col1.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow1Col1.Click -= btnRow1Col1_Click;
         }
 
         private void btnRow1Col2_Click(object sender, EventArgs e)
@@ -52,6 +54,8 @@ namespace TicTacToeProgram
                 btnRow1Col2.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow1Col2.Click -= btnRow1Col2_Click;
         }
 
         private void btnRow1Col3_Click(object sender, EventArgs e)
@@ -66,6 +70,8 @@ namespace TicTacToeProgram
                 btnRow1Col3.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow1Col3.Click -= btnRow1Col3_Click;
         }
 
         private void btnRow2Col1_Click(object sender, EventArgs e)
@@ -80,6 +86,8 @@ namespace TicTacToeProgram
                 btnRow2Col1.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow2Col1.Click -= btnRow2Col1_Click;
         }
 
         private void btnRow2Col2_Click(object sender, EventArgs e)
@@ -94,6 +102,8 @@ namespace TicTacToeProgram
                 btnRow2Col2.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow2Col2.Click -= btnRow2Col2_Click;
         }
 
         private void btnRow2Col3_Click(object sender, EventArgs e)
@@ -108,6 +118,8 @@ namespace TicTacToeProgram
                 btnRow2Col3.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow2Col3.Click -= btnRow2Col3_Click;
         }
 
         private void btnRow3Col1_Click(object sender, EventArgs e)
@@ -122,6 +134,8 @@ namespace TicTacToeProgram
                 btnRow3Col1.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow3Col1.Click -= btnRow3Col1_Click;
         }
 
         private void btnRow3Col2_Click(object sender, EventArgs e)
@@ -136,6 +150,8 @@ namespace TicTacToeProgram
                 btnRow3Col2.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow3Col2.Click -= btnRow3Col2_Click;
         }
 
         private void btnRow3Col3_Click(object sender, EventArgs e)
@@ -150,6 +166,8 @@ namespace TicTacToeProgram
                 btnRow3Col3.BackgroundImage = b1;
                 flag *= -1;
             }
+
+            btnRow3Col3.Click -= btnRow3Col3_Click;
         }
 
     }
