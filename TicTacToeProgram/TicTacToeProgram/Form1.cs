@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TicTacToeProgram
 {
-    public partial class Form1 : Form
+    public partial class TicTacToeForm : Form
     {
-        public Form1()
+        public TicTacToeForm()
         {
             InitializeComponent();
         }
@@ -32,10 +32,12 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow1Col1.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             } else
             {
                 btnRow1Col1.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -47,11 +49,13 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow1Col2.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow1Col2.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -63,11 +67,13 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow1Col3.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow1Col3.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -79,11 +85,13 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow2Col1.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow2Col1.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -95,11 +103,13 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow2Col2.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow2Col2.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -111,11 +121,13 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow2Col3.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow2Col3.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -127,11 +139,13 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow3Col1.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow3Col1.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -143,11 +157,13 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow3Col2.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow3Col2.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
@@ -159,16 +175,27 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow3Col3.BackgroundImage = b;
+                OTurn();
                 flag *= -1;
             }
             else
             {
                 btnRow3Col3.BackgroundImage = b1;
+                XTurn();
                 flag *= -1;
             }
 
             btnRow3Col3.Click -= btnRow3Col3_Click;
         }
 
+        private void XTurn()
+        {
+            displayBox.Text = "Your Turn X!";
+        }
+
+        private void OTurn()
+        {
+            displayBox.Text = "Your Turn O!";
+        }
     }
 }
