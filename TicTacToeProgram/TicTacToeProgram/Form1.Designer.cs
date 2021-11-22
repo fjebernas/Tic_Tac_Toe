@@ -39,6 +39,7 @@ namespace TicTacToeProgram
             this.btnRow3Col2 = new System.Windows.Forms.Button();
             this.btnRow3Col3 = new System.Windows.Forms.Button();
             this.displayBox = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRow1Col1
@@ -160,12 +161,23 @@ namespace TicTacToeProgram
             this.displayBox.Text = "Your Turn X!";
             this.displayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(558, 31);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 4;
+            this.btnReset.Text = "Reset Game";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // TicTacToeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(682, 689);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.displayBox);
             this.Controls.Add(this.btnRow3Col3);
             this.Controls.Add(this.btnRow3Col2);
@@ -178,6 +190,7 @@ namespace TicTacToeProgram
             this.Controls.Add(this.btnRow1Col1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TicTacToeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicTacToe Program";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -197,6 +210,7 @@ namespace TicTacToeProgram
         private System.Windows.Forms.Button btnRow3Col2;
         private System.Windows.Forms.Button btnRow3Col3;
         private System.Windows.Forms.TextBox displayBox;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 

@@ -256,7 +256,7 @@ namespace TicTacToeProgram
                 )
             {
                 displayBox.Text = "X WINS!";
-                
+                GameOver();
             }
             else if (
               matrix[0] == 2 && matrix[1] == 2 && matrix[2] == 2 ||
@@ -272,8 +272,26 @@ namespace TicTacToeProgram
               )
             {
                 displayBox.Text = "O WINS!";
-                
+                GameOver();
             }
+        }
+
+        private void GameOver()
+        {
+            btnRow1Col1.Click -= btnRow1Col1_Click;
+            btnRow1Col2.Click -= btnRow1Col2_Click;
+            btnRow1Col3.Click -= btnRow1Col3_Click;
+            btnRow2Col1.Click -= btnRow2Col1_Click;
+            btnRow2Col2.Click -= btnRow2Col2_Click;
+            btnRow2Col3.Click -= btnRow2Col3_Click;
+            btnRow3Col1.Click -= btnRow3Col1_Click;
+            btnRow3Col2.Click -= btnRow3Col2_Click;
+            btnRow3Col3.Click -= btnRow3Col3_Click;
+        }
+
+            private void btnReset_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
