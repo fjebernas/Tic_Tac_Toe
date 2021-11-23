@@ -483,6 +483,8 @@ namespace TicTacToeProgram
         /*--------------------------TILE HIGHLIGHTERS(ABOVE)--------------------------*/
 
 
+
+
         private void btnReset_Click(object sender, EventArgs e)
         {
             Application.Restart();
