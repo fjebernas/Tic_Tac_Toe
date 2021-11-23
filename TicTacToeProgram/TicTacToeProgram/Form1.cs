@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,11 +34,18 @@ namespace TicTacToeProgram
         Bitmap b = new Bitmap(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\RedX.PNG");
         Bitmap b1 = new Bitmap(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\BlueO.PNG");
 
+        SoundPlayer tadaSound = new SoundPlayer(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\TadaSound.wav");
+        SoundPlayer ticSound = new SoundPlayer(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\TicSound.wav");
+        SoundPlayer tacSound = new SoundPlayer(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\TacSound.wav");
+        SoundPlayer drawSound = new SoundPlayer(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\DrawSound.wav");
+
+        /*--------------------------TILE CLICKS(BELOW)--------------------------*/
         private void btnRow1Col1_Click(object sender, EventArgs e)
         {
             if (flag == 1)
             {
                 btnRow1Col1.BackgroundImage = b;
+                ticSound.Play();
                 matrix[0] = 1;
                 OTurn();
                 Check();
@@ -46,6 +54,7 @@ namespace TicTacToeProgram
             } else
             {
                 btnRow1Col1.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[0] = 2;
                 XTurn();
                 Check();
@@ -53,6 +62,10 @@ namespace TicTacToeProgram
             }
 
             btnRow1Col1.Click -= btnRow1Col1_Click;
+
+            btnRow1Col1.BackColor = Color.Black;
+            btnRow1Col1.MouseEnter -= btnRow1Col1_MouseEnter;
+            btnRow1Col1.Cursor = Cursors.No;
         }
 
         private void btnRow1Col2_Click(object sender, EventArgs e)
@@ -60,6 +73,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow1Col2.BackgroundImage = b;
+                ticSound.Play();
                 matrix[1] = 1;
                 OTurn();
                 Check();
@@ -68,6 +82,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow1Col2.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[1] = 2;
                 XTurn();
                 Check();
@@ -75,6 +90,10 @@ namespace TicTacToeProgram
             }
 
             btnRow1Col2.Click -= btnRow1Col2_Click;
+
+            btnRow1Col2.BackColor = Color.Black;
+            btnRow1Col2.MouseEnter -= btnRow1Col2_MouseEnter;
+            btnRow1Col2.Cursor = Cursors.No;
         }
 
         private void btnRow1Col3_Click(object sender, EventArgs e)
@@ -82,6 +101,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow1Col3.BackgroundImage = b;
+                ticSound.Play();
                 matrix[2] = 1;
                 OTurn();
                 Check();
@@ -90,6 +110,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow1Col3.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[2] = 2;
                 XTurn();
                 Check();
@@ -97,6 +118,10 @@ namespace TicTacToeProgram
             }
 
             btnRow1Col3.Click -= btnRow1Col3_Click;
+
+            btnRow1Col3.BackColor = Color.Black;
+            btnRow1Col3.MouseEnter -= btnRow1Col3_MouseEnter;
+            btnRow1Col3.Cursor = Cursors.No;
         }
 
         private void btnRow2Col1_Click(object sender, EventArgs e)
@@ -104,6 +129,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow2Col1.BackgroundImage = b;
+                ticSound.Play();
                 matrix[3] = 1;
                 OTurn();
                 Check();
@@ -112,6 +138,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow2Col1.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[3] = 2;
                 XTurn();
                 Check();
@@ -119,6 +146,10 @@ namespace TicTacToeProgram
             }
 
             btnRow2Col1.Click -= btnRow2Col1_Click;
+
+            btnRow2Col1.BackColor = Color.Black;
+            btnRow2Col1.MouseEnter -= btnRow2Col1_MouseEnter;
+            btnRow2Col1.Cursor = Cursors.No;
         }
 
         private void btnRow2Col2_Click(object sender, EventArgs e)
@@ -126,6 +157,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow2Col2.BackgroundImage = b;
+                ticSound.Play();
                 matrix[4] = 1;
                 OTurn();
                 Check();
@@ -134,6 +166,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow2Col2.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[4] = 2;
                 XTurn();
                 Check();
@@ -141,6 +174,10 @@ namespace TicTacToeProgram
             }
 
             btnRow2Col2.Click -= btnRow2Col2_Click;
+
+            btnRow2Col2.BackColor = Color.Black;
+            btnRow2Col2.MouseEnter -= btnRow2Col2_MouseEnter;
+            btnRow2Col2.Cursor = Cursors.No;
         }
 
         private void btnRow2Col3_Click(object sender, EventArgs e)
@@ -148,6 +185,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow2Col3.BackgroundImage = b;
+                ticSound.Play();
                 matrix[5] = 1;
                 OTurn();
                 Check();
@@ -156,6 +194,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow2Col3.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[5] = 2;
                 XTurn();
                 Check();
@@ -163,6 +202,10 @@ namespace TicTacToeProgram
             }
 
             btnRow2Col3.Click -= btnRow2Col3_Click;
+
+            btnRow2Col3.BackColor = Color.Black;
+            btnRow2Col3.MouseEnter -= btnRow2Col3_MouseEnter;
+            btnRow2Col3.Cursor = Cursors.No;
         }
 
         private void btnRow3Col1_Click(object sender, EventArgs e)
@@ -170,6 +213,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow3Col1.BackgroundImage = b;
+                ticSound.Play();
                 matrix[6] = 1;
                 OTurn();
                 Check();
@@ -178,6 +222,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow3Col1.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[6] = 2;
                 XTurn();
                 Check();
@@ -185,6 +230,10 @@ namespace TicTacToeProgram
             }
 
             btnRow3Col1.Click -= btnRow3Col1_Click;
+
+            btnRow3Col1.BackColor = Color.Black;
+            btnRow3Col1.MouseEnter -= btnRow3Col1_MouseEnter;
+            btnRow3Col1.Cursor = Cursors.No;
         }
 
         private void btnRow3Col2_Click(object sender, EventArgs e)
@@ -192,6 +241,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow3Col2.BackgroundImage = b;
+                ticSound.Play();
                 matrix[7] = 1;
                 OTurn();
                 Check();
@@ -200,6 +250,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow3Col2.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[7] = 2;
                 XTurn();
                 Check();
@@ -207,6 +258,10 @@ namespace TicTacToeProgram
             }
 
             btnRow3Col2.Click -= btnRow3Col2_Click;
+
+            btnRow3Col2.BackColor = Color.Black;
+            btnRow3Col2.MouseEnter -= btnRow3Col2_MouseEnter;
+            btnRow3Col2.Cursor = Cursors.No;
         }
 
         private void btnRow3Col3_Click(object sender, EventArgs e)
@@ -214,6 +269,7 @@ namespace TicTacToeProgram
             if (flag == 1)
             {
                 btnRow3Col3.BackgroundImage = b;
+                ticSound.Play();
                 matrix[8] = 1;
                 OTurn();
                 Check();
@@ -222,6 +278,7 @@ namespace TicTacToeProgram
             else
             {
                 btnRow3Col3.BackgroundImage = b1;
+                tacSound.Play();
                 matrix[8] = 2;
                 XTurn();
                 Check();
@@ -229,16 +286,21 @@ namespace TicTacToeProgram
             }
 
             btnRow3Col3.Click -= btnRow3Col3_Click;
+
+            btnRow3Col3.BackColor = Color.Black;
+            btnRow3Col3.MouseEnter -= btnRow3Col3_MouseEnter;
+            btnRow3Col3.Cursor = Cursors.No;
         }
+        /*--------------------------TILE CLICKERS(ABOVE)--------------------------*/
 
         private void XTurn()
         {
-            displayBox.Text = "Your Turn X!";
+            headText.Text = "Your Turn X!";
         }
 
         private void OTurn()
         {
-            displayBox.Text = "Your Turn O!";
+            headText.Text = "Your Turn O!";
         }
 
         private void Check()
@@ -255,7 +317,9 @@ namespace TicTacToeProgram
                 matrix[2] == 1 && matrix[4] == 1 && matrix[6] == 1
                 )
             {
-                displayBox.Text = "X WINS!";
+                headText.Text = "    X WINS!";
+                tadaSound.Play();
+                MessageBox.Show("         X WINS!", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.None);
                 GameOver();
             }
             else if (
@@ -271,7 +335,24 @@ namespace TicTacToeProgram
               matrix[2] == 2 && matrix[4] == 2 && matrix[6] == 2
               )
             {
-                displayBox.Text = "O WINS!";
+                headText.Text = "    O WINS!";
+                tadaSound.Play();
+                MessageBox.Show("         O WINS!", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.None);
+                GameOver();
+            } else if (
+                matrix[0] != 0 &&
+                matrix[1] != 0 &&
+                matrix[2] != 0 &&
+                matrix[3] != 0 &&
+                matrix[4] != 0 &&
+                matrix[5] != 0 &&
+                matrix[6] != 0 &&
+                matrix[7] != 0 &&
+                matrix[8] != 0
+                )
+            {
+                headText.Text = "     DRAW";
+                drawSound.Play();
                 GameOver();
             }
         }
@@ -287,9 +368,122 @@ namespace TicTacToeProgram
             btnRow3Col1.Click -= btnRow3Col1_Click;
             btnRow3Col2.Click -= btnRow3Col2_Click;
             btnRow3Col3.Click -= btnRow3Col3_Click;
+
+            btnRow1Col1.MouseEnter -= btnRow1Col1_MouseEnter;
+            btnRow1Col2.MouseEnter -= btnRow1Col2_MouseEnter;
+            btnRow1Col3.MouseEnter -= btnRow1Col3_MouseEnter;
+            btnRow2Col1.MouseEnter -= btnRow2Col1_MouseEnter;
+            btnRow2Col2.MouseEnter -= btnRow2Col2_MouseEnter;
+            btnRow2Col3.MouseEnter -= btnRow2Col3_MouseEnter;
+            btnRow3Col1.MouseEnter -= btnRow3Col1_MouseEnter;
+            btnRow3Col2.MouseEnter -= btnRow3Col2_MouseEnter;
+            btnRow3Col3.MouseEnter -= btnRow3Col3_MouseEnter;
+
+            btnRow1Col1.Cursor = Cursors.No;
+            btnRow1Col2.Cursor = Cursors.No;
+            btnRow1Col3.Cursor = Cursors.No;
+            btnRow2Col1.Cursor = Cursors.No;
+            btnRow2Col2.Cursor = Cursors.No;
+            btnRow2Col3.Cursor = Cursors.No;
+            btnRow3Col1.Cursor = Cursors.No;
+            btnRow3Col2.Cursor = Cursors.No;
+            btnRow3Col3.Cursor = Cursors.No;
         }
 
-            private void btnReset_Click(object sender, EventArgs e)
+        /*--------------------------TILE HIGHLIGHTERS(BELOW)--------------------------*/
+        private void btnRow1Col1_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow1Col1.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow1Col1_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow1Col1.BackColor = Color.Black;
+        }
+
+        private void btnRow1Col2_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow1Col2.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow1Col2_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow1Col2.BackColor = Color.Black; ;
+        }
+
+        private void btnRow1Col3_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow1Col3.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow1Col3_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow1Col3.BackColor = Color.Black;
+        }
+
+        private void btnRow2Col1_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow2Col1.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow2Col1_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow2Col1.BackColor = Color.Black;
+        }
+
+        private void btnRow2Col2_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow2Col2.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow2Col2_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow2Col2.BackColor = Color.Black;
+        }
+
+        private void btnRow2Col3_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow2Col3.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow2Col3_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow2Col3.BackColor = Color.Black;
+        }
+
+        private void btnRow3Col1_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow3Col1.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow3Col1_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow3Col1.BackColor = Color.Black;
+        }
+
+        private void btnRow3Col2_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow3Col2.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow3Col2_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow3Col2.BackColor = Color.Black;
+        }
+
+        private void btnRow3Col3_MouseEnter(object sender, EventArgs e)
+        {
+            btnRow3Col3.BackColor = Color.DarkOliveGreen;
+        }
+
+        private void btnRow3Col3_MouseLeave(object sender, EventArgs e)
+        {
+            btnRow3Col3.BackColor = Color.Black;
+        }
+        /*--------------------------TILE HIGHLIGHTERS(ABOVE)--------------------------*/
+
+
+        private void btnReset_Click(object sender, EventArgs e)
         {
             Application.Restart();
         }
