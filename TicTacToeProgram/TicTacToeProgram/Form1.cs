@@ -363,6 +363,7 @@ namespace TicTacToeProgram
                 headText.Text = "     DRAW";
                 drawSound.Play();
                 GameOver();
+                MessageBox.Show("          DRAW", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
         }
 

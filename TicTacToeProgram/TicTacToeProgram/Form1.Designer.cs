@@ -191,6 +191,7 @@ namespace TicTacToeProgram
             // headText
             // 
             this.headText.AutoSize = true;
+            this.headText.BackColor = System.Drawing.Color.Transparent;
             this.headText.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headText.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.headText.Location = new System.Drawing.Point(180, 9);
@@ -205,6 +206,7 @@ namespace TicTacToeProgram
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
+            this.BackgroundImage = global::TicTacToeProgram.Properties.Resources.WoodBackground;
             this.ClientSize = new System.Drawing.Size(681, 689);
             this.Controls.Add(this.headText);
             this.Controls.Add(this.btnReset);
