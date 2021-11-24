@@ -39,6 +39,7 @@ namespace TicTacToeProgram
         SoundPlayer tacSound = new SoundPlayer(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\TacSound.wav");
         SoundPlayer drawSound = new SoundPlayer(@"C:\Users\franc\source\repos\Assign#5TicTacToe\TicTacToeProgram\TicTacToeProgram\Properties\DrawSound.wav");
 
+
         /*--------------------------TILE CLICKS(BELOW)--------------------------*/
         private void btnRow1Col1_Click(object sender, EventArgs e)
         {
@@ -382,7 +383,7 @@ namespace TicTacToeProgram
                 btnRow2Col2.BackColor = Color.Orange;
                 btnRow2Col3.BackColor = Color.Orange;
             } else if (matrix[6] == 1 && matrix[7] == 1 && matrix[8] == 1 ||
-                       matrix[6] == 1 && matrix[7] == 1 && matrix[8] == 1)
+                       matrix[6] == 2 && matrix[7] == 2 && matrix[8] == 2)
             {
                 btnRow3Col1.BackColor = Color.Orange;
                 btnRow3Col2.BackColor = Color.Orange;
