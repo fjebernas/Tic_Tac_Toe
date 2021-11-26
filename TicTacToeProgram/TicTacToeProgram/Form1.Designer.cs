@@ -52,10 +52,11 @@ namespace TicTacToeProgram
             this.btnRow1Col1.Name = "btnRow1Col1";
             this.btnRow1Col1.Size = new System.Drawing.Size(211, 193);
             this.btnRow1Col1.TabIndex = 0;
+            this.btnRow1Col1.Tag = "btnTile";
             this.btnRow1Col1.UseVisualStyleBackColor = false;
             this.btnRow1Col1.Click += new System.EventHandler(this.btnRow1Col1_Click);
-            this.btnRow1Col1.MouseEnter += new System.EventHandler(this.btnRow1Col1_MouseEnter);
-            this.btnRow1Col1.MouseLeave += new System.EventHandler(this.btnRow1Col1_MouseLeave);
+            this.btnRow1Col1.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow1Col1.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow1Col2
             // 
@@ -67,10 +68,11 @@ namespace TicTacToeProgram
             this.btnRow1Col2.Name = "btnRow1Col2";
             this.btnRow1Col2.Size = new System.Drawing.Size(211, 193);
             this.btnRow1Col2.TabIndex = 1;
+            this.btnRow1Col2.Tag = "btnTile";
             this.btnRow1Col2.UseVisualStyleBackColor = false;
             this.btnRow1Col2.Click += new System.EventHandler(this.btnRow1Col2_Click);
-            this.btnRow1Col2.MouseEnter += new System.EventHandler(this.btnRow1Col2_MouseEnter);
-            this.btnRow1Col2.MouseLeave += new System.EventHandler(this.btnRow1Col2_MouseLeave);
+            this.btnRow1Col2.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow1Col2.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow1Col3
             // 
@@ -82,10 +84,11 @@ namespace TicTacToeProgram
             this.btnRow1Col3.Name = "btnRow1Col3";
             this.btnRow1Col3.Size = new System.Drawing.Size(211, 193);
             this.btnRow1Col3.TabIndex = 2;
+            this.btnRow1Col3.Tag = "btnTile";
             this.btnRow1Col3.UseVisualStyleBackColor = false;
             this.btnRow1Col3.Click += new System.EventHandler(this.btnRow1Col3_Click);
-            this.btnRow1Col3.MouseEnter += new System.EventHandler(this.btnRow1Col3_MouseEnter);
-            this.btnRow1Col3.MouseLeave += new System.EventHandler(this.btnRow1Col3_MouseLeave);
+            this.btnRow1Col3.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow1Col3.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow2Col1
             // 
@@ -97,10 +100,11 @@ namespace TicTacToeProgram
             this.btnRow2Col1.Name = "btnRow2Col1";
             this.btnRow2Col1.Size = new System.Drawing.Size(211, 193);
             this.btnRow2Col1.TabIndex = 0;
+            this.btnRow2Col1.Tag = "btnTile";
             this.btnRow2Col1.UseVisualStyleBackColor = false;
             this.btnRow2Col1.Click += new System.EventHandler(this.btnRow2Col1_Click);
-            this.btnRow2Col1.MouseEnter += new System.EventHandler(this.btnRow2Col1_MouseEnter);
-            this.btnRow2Col1.MouseLeave += new System.EventHandler(this.btnRow2Col1_MouseLeave);
+            this.btnRow2Col1.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow2Col1.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow2Col2
             // 
@@ -112,10 +116,11 @@ namespace TicTacToeProgram
             this.btnRow2Col2.Name = "btnRow2Col2";
             this.btnRow2Col2.Size = new System.Drawing.Size(211, 193);
             this.btnRow2Col2.TabIndex = 1;
+            this.btnRow2Col2.Tag = "btnTile";
             this.btnRow2Col2.UseVisualStyleBackColor = false;
             this.btnRow2Col2.Click += new System.EventHandler(this.btnRow2Col2_Click);
-            this.btnRow2Col2.MouseEnter += new System.EventHandler(this.btnRow2Col2_MouseEnter);
-            this.btnRow2Col2.MouseLeave += new System.EventHandler(this.btnRow2Col2_MouseLeave);
+            this.btnRow2Col2.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow2Col2.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow2Col3
             // 
@@ -127,10 +132,11 @@ namespace TicTacToeProgram
             this.btnRow2Col3.Name = "btnRow2Col3";
             this.btnRow2Col3.Size = new System.Drawing.Size(211, 193);
             this.btnRow2Col3.TabIndex = 2;
+            this.btnRow2Col3.Tag = "btnTile";
             this.btnRow2Col3.UseVisualStyleBackColor = false;
             this.btnRow2Col3.Click += new System.EventHandler(this.btnRow2Col3_Click);
-            this.btnRow2Col3.MouseEnter += new System.EventHandler(this.btnRow2Col3_MouseEnter);
-            this.btnRow2Col3.MouseLeave += new System.EventHandler(this.btnRow2Col3_MouseLeave);
+            this.btnRow2Col3.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow2Col3.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow3Col1
             // 
@@ -142,10 +148,11 @@ namespace TicTacToeProgram
             this.btnRow3Col1.Name = "btnRow3Col1";
             this.btnRow3Col1.Size = new System.Drawing.Size(211, 193);
             this.btnRow3Col1.TabIndex = 0;
+            this.btnRow3Col1.Tag = "btnTile";
             this.btnRow3Col1.UseVisualStyleBackColor = false;
             this.btnRow3Col1.Click += new System.EventHandler(this.btnRow3Col1_Click);
-            this.btnRow3Col1.MouseEnter += new System.EventHandler(this.btnRow3Col1_MouseEnter);
-            this.btnRow3Col1.MouseLeave += new System.EventHandler(this.btnRow3Col1_MouseLeave);
+            this.btnRow3Col1.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow3Col1.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow3Col2
             // 
@@ -157,10 +164,11 @@ namespace TicTacToeProgram
             this.btnRow3Col2.Name = "btnRow3Col2";
             this.btnRow3Col2.Size = new System.Drawing.Size(211, 193);
             this.btnRow3Col2.TabIndex = 1;
+            this.btnRow3Col2.Tag = "btnTile";
             this.btnRow3Col2.UseVisualStyleBackColor = false;
             this.btnRow3Col2.Click += new System.EventHandler(this.btnRow3Col2_Click);
-            this.btnRow3Col2.MouseEnter += new System.EventHandler(this.btnRow3Col2_MouseEnter);
-            this.btnRow3Col2.MouseLeave += new System.EventHandler(this.btnRow3Col2_MouseLeave);
+            this.btnRow3Col2.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow3Col2.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnRow3Col3
             // 
@@ -172,10 +180,11 @@ namespace TicTacToeProgram
             this.btnRow3Col3.Name = "btnRow3Col3";
             this.btnRow3Col3.Size = new System.Drawing.Size(211, 193);
             this.btnRow3Col3.TabIndex = 2;
+            this.btnRow3Col3.Tag = "btnTile";
             this.btnRow3Col3.UseVisualStyleBackColor = false;
             this.btnRow3Col3.Click += new System.EventHandler(this.btnRow3Col3_Click);
-            this.btnRow3Col3.MouseEnter += new System.EventHandler(this.btnRow3Col3_MouseEnter);
-            this.btnRow3Col3.MouseLeave += new System.EventHandler(this.btnRow3Col3_MouseLeave);
+            this.btnRow3Col3.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnRow3Col3.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnReset
             // 
